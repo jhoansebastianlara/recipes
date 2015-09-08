@@ -1,0 +1,33 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content class="post-size-14px">
+        <ion-nav-bar class="bar app-top-bar">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" class="main-menu" expose-aside-when="large">
+        <ion-content>
+            <ion-list>
+                <ion-item class="heading-item item item-avatar" nav-clear menu-close ui-sref="app.profile" ng-if="authUserData.isConnected">
+                    <img ng-src="{{ authUserData.profileImage }}">
+                    <h2 class="greeting">{{ authUserData.name }}</h2>
+                    <p class="message">{{ 'GENERAL.CONFIG.TITLE' | translate }}</p>
+                </ion-item>
+                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.categories">
+                    <i class="icon ion-ios-list-outline"></i>
+                    <h2 class="menu-text">{{ 'GENERAL.CONFIG.HOME_CATEGORIES.TITLE'  | translate}}</h2>
+                </ion-item>
+                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.settings" on-hold="onHoldSettings()" on-drag-right="onDragRightSettings()" on-drag-left="onDragLeftSettings()">
+                    <i class="icon ion-gear-a"></i>
+                    <h2 class="menu-text">{{ 'SETTINGS.CONFIG.TITLE' | translate}}</h2>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,133 @@
+{
+    "GENERAL": {
+        "CONFIG": {
+            "TITLE": "Welcome",
+            "HOME": "Home",
+            "LOGOUT": "Logout",
+            "LANGUAGE": {
+                "LABEL": "Language"
+            },
+            "HOME_CATEGORIES": {
+                "TITLE": "Categories"
+            },
+            "LIST_RECIPES": {
+                "TITLE": "Recipes",
+                "BUTTON": "See more"
+            },
+            "ACTION_SHEET": {
+                "OPT_1": "See Recipes",
+                "OPT_2": "Edit Category",
+                "OPT_3": "Delete"
+            },
+            "ACTION_SHEET_CATEGORIES": {
+                "TAKE_PIC": "Take Picture",
+                "SELECT_PIC_EXIST": "Select existing photo",
+                "CANCEL": "Cancel",
+                "SAVED": "Saved",
+                "DELETE_CATEGORY": "Delete category",
+                "DELETE_SURE_QUEST_CAT": "Are you sure to delete",
+                "DELETE_OK": "Successfully removed",
+                "PRINCIPAL_IMAGE": "pricipal image",
+                "STEP_CREATE": "Created step"
+            },
+            "ACTION_SHEET_RECIPES": {
+                "SEE": "See",
+                "EDIT": "Edit",
+                "OPTIONS": "Opcions",
+                "CANCEL": "Cancel",
+                "SAVING": "Guardando",
+                "SAVED": "Guardado"
+            },
+            "NAVIGATION": {
+                "CANCEL": "Cancel",
+                "OK": "Ok",
+                "OPTION": "Options" 
+            }
+        }
+    },
+    "LOGIN": {
+        "CONFIG": {
+            "USER": "User",
+            "PASSWORD": "Password",
+            "LOGIN": "Login",
+            "REQUIRED": "Required"
+        }
+    },
+    "NOTIFICATIONS": {
+        "CONFIG": {
+            "MSG_0": "Notification",
+            "MSG_1": "Good Bye!",
+            "MSG_2": "Error connection",
+            "LOADING": "Loading..."
+        }
+    },
+    "CATEGORIES": {
+        "CATEGORIES_NOT_FOUND": {            
+            "LABEL": "Categories were not found"           
+        }
+    },
+    "NEW_CATEGORY_OPT": {
+        "CONFIG": {            
+            "TITLE": "Title",
+            "NAME": "Name",
+            "IMAGE": "Image",
+            "CREATE": "Create",
+            "UPDATE": "Update",
+            "NEW_CATEGORY": "New Category",
+            "UPDATE_CATEGORY": "Update Category",
+            "LOAD_IMAGE": "Load Image"            
+        }
+    },
+    "NEW_RECIPE_OPT": {
+        "CONFIG": {            
+            "TITLE": "Title",
+            "NAME": "Name",
+            "IMAGE": "Image",
+            "CREATE": "Create",
+            "UPDATE": "Update",
+            "NEW_RECIPE": "New Recipe",
+            "UPDATE_RECIPE": "Update Recipe",
+            "LOAD_IMAGE": "Load Image",
+            "MIN_CHAR": "Minimum 5 characters are required",
+            "MAX_CHAR": "Maximum 50 characters are allowed",
+            "PHRASE_DECRIP": "Descriptive phrase",
+            "MIN_CHAR_REQUER": "Minimum 5 characters are required",
+            "MAX_CHAR_PERMT": "Maximum 50 characters are allowed",
+            "LOAD_PRINCIPAL_IMAGE": "Load main image",
+            "CHANGE_PRINCIPAL_IMAGE": "Change main picture",
+            "IMAGE_REQUIRED": "The image is required",
+            "DESCRIPTION": "Description",
+            "MIN_CHAR_REQUER_IMG": "Minimum 20 characters are required",
+            "MAX_CHAR_PERMT_IMG": "Maximum 500 characters are allowed",
+            "INGREDIENTS": "Ingredients",
+            "STEPS": "Steps",
+            "ORDER": "Order",
+            "OK": "Ok",
+            "MIN_INGR_REQU": "Minimum 1 ingredient is required",
+            "MIN_STEP_REQU": "Minimum 1 step is required",
+            "DELETE": "Delete",
+            "INGREDIENT_EXIST": "The ingredient already exists",
+            "ADD": "Add",
+            "NEW_STEP": "New step",
+            "CHANGE_IMAGE": "Change Image",
+            "CRATE_STEP": "Create step",
+            "UPDATE_STEP": "Update step",
+            "CREATE_RECIPE": "Create recipe",
+            "UPDATE_RECIPE": "Update Recipe",
+            "REQUIRED": "Required",
+            "DELETE_RECIPE": "Delete recipe",
+            "RECIPE_DELETED": "Recipe deleted!",
+            "DELETE_STEP": "Delete step"          
+        }
+    },
+    "SETTINGS": {
+        "CONFIG": {            
+            "TITLE": "Configuration"        
+        },
+        "LANGUAGE": {
+            "LABEL": "Language",
+            "SPANISH": "Spanish",
+            "ENGLISH": "English"
+        }
+    }
+}

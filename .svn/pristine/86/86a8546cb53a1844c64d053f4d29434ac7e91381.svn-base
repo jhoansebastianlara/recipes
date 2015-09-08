@@ -1,0 +1,23 @@
+<ion-view class="settings-view">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    <span> {{ 'SETTINGS.CONFIG.TITLE' | translate }} </span>
+  </ion-nav-title>
+  <ion-content>
+    <ul class="list">
+
+      <div class="item item-divider">{{ 'SETTINGS.LANGUAGE.LABEL' | translate }}</div>
+
+      <div class="item item-divider"></div>
+         <ion-radio ng-repeat="item in radioChoiceLanguage"
+                   ng-value="item.value"
+                   ng-model="dataLang.radioChoice"
+                   ng-click="selectLanguage(item.value)">
+          {{ item.text }}
+        </ion-radio>
+      
+    </ul>
+  </ion-content>
+</ion-view>

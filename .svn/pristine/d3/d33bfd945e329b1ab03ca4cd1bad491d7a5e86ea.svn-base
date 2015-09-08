@@ -1,0 +1,37 @@
+<ion-view class="feeds-categories-view" ng-class="{'bookmarks-view' : (lodash.size(categories) == 0 && !isLoading) }">
+    <ion-nav-title>
+        <span>{{ 'GENERAL.CONFIG.HOME_CATEGORIES.TITLE' | translate: (lodash.size(categories)) }}</span>
+    </ion-nav-title>
+
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-ios-plus-empty" 
+            ng-click="newCategory()"
+            ng-if="authUserData.isConnected"></button>
+    </ion-nav-buttons>
+
+    <ion-content>
+        <div ng-if="(lodash.size(categories) == 0 && !isLoading)" class="row bookmarks-container">
+            <div class="col col-center">
+                <div class="empty-results">
+                    <i class="icon ion-ios-information-empty"></i>
+                    <h3 class="no-bookmarks">{{ 'CATEGORIES.CATEGORIES_NOT_FOUND.LABEL' | translate }}</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Lista de categorías -->
+        <div class="row categories-list">
+            <div ng-repeat="category in categories" class="col col-50" ng-click="showCategory(category)" ng-show="!lodash.isEmpty(category[defaultLang].name) || authUserData.isConnected">
+                <a class="feed-category">
+                    <img ng-src="{{ category[defaultLang].image }}" width="100%" />
+                    <div class="category-bg"></div>
+                    <span class="category-title">{{ category[defaultLang].name }}</span>
+                </a>
+            </div>
+            <!-- infinite scroll -->
+            <!-- <ion-infinite-scroll                 
+                    on-infinite="loadMore()" 
+                    distance="10%">
+            </ion-infinite-scroll> -->
+        </div>
+    </ion-content>
+</ion-view>
